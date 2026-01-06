@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 
 const Skills = () => {
@@ -9,6 +9,10 @@ const Skills = () => {
     { name: 'React', level: 75, color: 'from-cyan-400 to-blue-500' },
     { name: 'Python', level: 90, color: 'from-green-400 to-blue-500' },
     { name: 'Java', level: 85, color: 'from-red-500 to-orange-500' },
+    { name: 'TensorFlow', level: 85, color: 'from-orange-600 to-yellow-500' },
+    { name: 'Machine Learning', level: 88, color: 'from-purple-500 to-pink-500' },
+    { name: 'Node.js', level: 80, color: 'from-green-600 to-green-400' },
+    { name: 'MongoDB', level: 75, color: 'from-green-500 to-green-600' },
   ];
 
   const professionalSkills = [
@@ -46,7 +50,7 @@ const Skills = () => {
             className="space-y-8"
           >
             <h3 className="text-2xl font-bold text-center mb-8">Technical Skills</h3>
-            
+
             <div className="space-y-6">
               {technicalSkills.map((skill, index) => (
                 <motion.div
@@ -86,7 +90,7 @@ const Skills = () => {
             className="space-y-8"
           >
             <h3 className="text-2xl font-bold text-center mb-8">Professional Skills</h3>
-            
+
             <div className="grid grid-cols-2 gap-8">
               {professionalSkills.map((skill, index) => (
                 <motion.div
